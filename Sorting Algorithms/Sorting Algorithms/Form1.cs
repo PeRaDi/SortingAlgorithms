@@ -16,5 +16,13 @@ namespace Sorting_Algorithms
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show(Lang.Confirmation_Exit, Lang.Confirmation_Exit_Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
