@@ -139,6 +139,7 @@
             this.btn_generate.TabIndex = 1;
             this.btn_generate.Text = "Generate";
             this.btn_generate.UseVisualStyleBackColor = true;
+            this.btn_generate.Click += new System.EventHandler(this.btn_generate_Click);
             // 
             // button2
             // 
