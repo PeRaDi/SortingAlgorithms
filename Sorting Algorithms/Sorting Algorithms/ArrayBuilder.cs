@@ -8,22 +8,25 @@ namespace Sorting_Algorithms
 {
     class ArrayBuilder
     {
-        public static int[] bars;
-        Random rnd = new Random();
 
-        public void Generate(int n)
+        public static int[] array;
+        public static int[] randomArray;
+
+        static Random rnd = new Random();
+
+        public static void Generate(int n)
         {
-            bars = new int[n+1];
-            for (int i = 1; i <= bars.Length -1; i++)
+            array = new int[n+1];
+            for (int i = 1; i <= array.Length -1; i++)
             {
-                bars[i] = i;
-                Console.WriteLine(bars[i]);
+                array[i] = i;
+                Console.WriteLine(array[i]);
             }
-            int[] randomBars = bars.OrderBy(x => rnd.Next()).ToArray();
+            randomArray = array.OrderBy(x => rnd.Next()).ToArray();
 
-            for (int i = 1; i <= randomBars.Length - 1; i++)
+            for (int i = 1; i <= randomArray.Length - 1; i++)
             {
-                Console.WriteLine(randomBars[i]);
+                Console.WriteLine(randomArray[i]);
             }
         }
     }
