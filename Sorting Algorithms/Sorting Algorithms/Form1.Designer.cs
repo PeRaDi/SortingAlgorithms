@@ -64,6 +64,11 @@
             // num_arraylenght
             // 
             this.num_arraylenght.Location = new System.Drawing.Point(82, 91);
+            this.num_arraylenght.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.num_arraylenght.Name = "num_arraylenght";
             this.num_arraylenght.Size = new System.Drawing.Size(50, 20);
             this.num_arraylenght.TabIndex = 8;
