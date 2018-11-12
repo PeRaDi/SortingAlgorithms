@@ -36,23 +36,8 @@ namespace Sorting_Algorithms
             arrayLenght = toInt(num_arraylenght.Value - 1);
             ArrayBuilder.Generate(arrayLenght);
 
-            //ArrayDrawer drawer = new ArrayDrawer(ArrayBuilder.randomArray, new Graph());
-            //drawer.draw();
-
-
-            Graphics gfx;
-            Pen pen = new Pen(Color.White, 2);
-
-            gfx = graphForm.CreateGraphics();
-            gfx.Clear(Color.Black);
-
-            int pos = 5;
-            for (int i = 1; i < ArrayBuilder.randomArray.Length; i++)
-            {
-                pos = pos + 5;
-                gfx.DrawRectangle(pen, new Rectangle(pos, 450 - ArrayBuilder.randomArray[i], 1, ArrayBuilder.randomArray[i]));
-            }
-
+            ArrayDrawer drawer = new ArrayDrawer(ArrayBuilder.randomArray, graphForm);
+            drawer.draw();
 
         }
 
